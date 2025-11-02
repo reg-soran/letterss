@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تۆماری گشتی زانکۆی سۆران - Soran University General Registry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            direction: rtl;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #3498db;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .panels-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .panel-card {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .panel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.5);
+        }
+
+        .panel-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .panel-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .panel-card.graduation {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        .panel-card.graduation:hover {
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.5);
+        }
+
+        .panel-card.support {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .panel-card.support:hover {
+            box-shadow: 0 8px 25px rgba(46, 204, 113, 0.5);
+        }
+
+        .panel-card.school {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+        }
+
+        .panel-card.school:hover {
+            box-shadow: 0 8px 25px rgba(243, 156, 18, 0.5);
+        }
+
+        .panel-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .panel-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .panel-description {
+            font-size: 14px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .panel-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="Soran_University_Logonew.png" alt="Soran University Logo">
+        </div>
+
+        <h1 class="title">تۆماری گشتی زانکۆی سۆران</h1>
+        <h2 class="subtitle">Soran University General Registry</h2>
+
+        <div class="panels-container">
+            <a href="https://script.google.com/a/macros/soran.edu.iq/s/AKfycbyCuwylL663u-rAsf89KPQ2Vew6tYiDvpyFz2Aea0bA39-7q8O56GBIJCDKHe7KAZKZfw/exec" class="panel-card" target="_blank">
+                <div class="panel-icon">📋</div>
+                <div class="panel-title">فرمانی شوێن گۆڕین</div>
+                <div class="panel-title">Transfer Order</div>
+                <div class="panel-description">Manage student transfer orders and documentation</div>
+            </a>
+
+            <a href="https://script.google.com/a/macros/soran.edu.iq/s/AKfycbyCuwylL663u-rAsf89KPQ2Vew6tYiDvpyFz2Aea0bA39-7q8O56GBIJCDKHe7KAZKZfw/exec?panel=graduation" class="panel-card graduation" target="_blank">
+                <div class="panel-icon">🎓</div>
+                <div class="panel-title">پشتگیری دەرچوون</div>
+                <div class="panel-title">Graduation Support</div>
+                <div class="panel-description">Support for graduation records and certificates</div>
+            </a>
+
+            <a href="https://script.google.com/a/macros/soran.edu.iq/s/AKfycbyCuwylL663u-rAsf89KPQ2Vew6tYiDvpyFz2Aea0bA39-7q8O56GBIJCDKHe7KAZKZfw/exec?panel=support" class="panel-card support" target="_blank">
+                <div class="panel-icon">💼</div>
+                <div class="panel-title">پشتگیری ئاسایی</div>
+                <div class="panel-title">General Support</div>
+                <div class="panel-description">General technical support and assistance</div>
+            </a>
+
+            <a href="https://script.google.com/macros/s/AKfycbzGeutgYjtC5W7gdPcBx6LTMqZi-TR79-BPN6oAE_Yka-CteKPm_dFkftbj0RaVakDp/exec" class="panel-card school" target="_blank">
+                <div class="panel-icon">🏫</div>
+                <div class="panel-title">پشتگیری بۆ قوتابخانە</div>
+                <div class="panel-title">School Support</div>
+                <div class="panel-description">Support services for schools and departments</div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Soran University - All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
